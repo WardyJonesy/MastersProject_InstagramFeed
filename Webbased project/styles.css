@@ -1,0 +1,143 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    margin: 0; /* Remove default margin */
+    font-size: 16px; /* Base font size */
+  }
+  
+  .container {
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.9); /* Use rgba for background color with opacity */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2); /* Adjust box-shadow */
+    padding: 20px; /* Add padding */
+  }
+  
+  .header {
+    display: flex; /* Use flex for layout */
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+  }
+  
+  .header-title h3 {
+    margin: 0;
+    font-size: 1.5rem; /* Adjust font size */
+    color: #333; /* Text color */
+  }
+  
+  .header .menu-img {
+    padding: 0 10px; /* Adjust padding */
+  }
+  
+  .header-title .menu-userpicture {
+    margin-right: 10px; /* Adjust margin */
+  }
+  
+  .footer {
+    padding: 20px 0;
+    text-align: center; /* Align text center */
+    color: #777; /* Text color */
+  }
+  
+  .header-title {
+    font-size: 2rem; /* Adjust font size */
+    text-align: center; /* Center the text */
+    margin-bottom: 20px; /* Add margin at the bottom for spacing */
+  }
+  
+  .image-feed {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+    top: 50%; /* Adjust the position */
+    transform: translateY(-50%); /* Center vertically */
+  }
+  
+  .image-thumbnail {
+    max-width: 100%; /* Allow images to scale to the container width */
+    max-height: auto;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px; /* Add margin to all sides of the image */
+    margin-top: 20px; /* Add specific margin to the top to move the image down */
+  }
+  
+  .name-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.7); /* Adjust overlay background color */
+    padding: 10px;
+    border-radius: 4px;
+    font-weight: bold;
+  }
+  
+  .collect-data-button {
+    background-color: transparent;
+    color: grey;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    display: none; /* Initially hide the button */
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  /* Adjustments for smaller screens */
+  @media (max-width: 768px) {
+    body {
+      font-size: 14px;
+    }
+  
+    .container {
+      padding: 10px; /* Reduce padding for smaller screens */
+    }
+  
+    .header {
+      padding: 5px 0; /* Reduce padding for smaller screens */
+      flex-direction: column; /* Stack elements vertically for smaller screens */
+    }
+  
+    .header-title {
+      margin-bottom: 10px;
+      font-size: 1.5rem; /* Adjust font size */
+    }
+  
+    .image-thumbnail {
+      margin: 5px;
+      margin-top: 10px;
+    }
+  
+    .collect-data-button {
+      padding: 8px 16px;
+      background-color: grey; /* Adjust button color */
+      color: white; /* Text color */
+    }
+  
+    /* Add more CSS adjustments for smaller screens as needed */
+  }
+  
+  /* Style the name overlay for "bladvert_" images */
+.name-overlay-bladvert {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 10px;
+    border-radius: 4px;
+    font-weight: bold;
+    pointer-events: none;
+  }
